@@ -12,10 +12,10 @@ public:
             prefix+=nums[i];
         }
         
-        if (sz==n && prefix<x) //impossible
+        if (sz==n && prefix<x)
             return -1;
 
-        prefix-=nums[sz-1];// let prefix<=x
+        prefix-=nums[sz-1];
         int idx=sz-1;
         int ans=INT_MAX;
         if (idx>=0 && prefix==x) ans=sz-1;
